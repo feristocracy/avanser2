@@ -75,9 +75,9 @@
             <div class="absolute inset-0 bg-white/40 md:bg-white/35"></div>
 
             <div class="z-10 mx-auto w-full max-w-7xl px-6 md:px-20 pt-10">
-                <div class="w-full h-full text-center md:text-right">
+                <div class="w-full h-full text-center md:text-left">
 
-                    <p class="tracking-tight text-lg md:text-xl font-title font-bold uppercase tracking-[0.25em] text-avanserYellow drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">
+                    <p class="tracking-tight text-lg md:text-2xl font-title font-bold uppercase tracking-[0.25em] text-avanserYellow drop-shadow-[0_0_30px_rgba(255,255,255,0.8)]">
                         Ingeniería de precisión
                     </p>
 
@@ -86,11 +86,11 @@
                         <span class="block text-avanserRed drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">en flotillas</span>
                     </h1>
 
-                    <p class="mt-4 md:mt-0 mx-auto md:ml-auto md:mr-0 max-w-full md:max-w-xl text-base md:text-lg font-text font-weight-bold leading-relaxed drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
+                    <p class="mt-4 md:mt-0 md:mr-0 max-w-full md:max-w-xl text-base md:text-lg font-text font-weight-bold leading-relaxed drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
                         Mantenimiento preventivo, correctivo y administración de flotillas con cobertura nacional.
                     </p>
 
-                    <div class="mt-8 h-2 w-24 bg-yellow-400 mx-auto md:ml-auto md:mr-0"></div>
+                    <div class="mt-8 h-2 w-24 bg-yellow-400 mx-auto md:ml-0"></div>
 
                     <a href="#contacto"
                        class="mt-10 mx-auto md:ml-auto md:mr-0 flex w-fit bg-red-600 px-10 py-4 text-sm font-title font-bold uppercase text-white shadow-lg transition hover:bg-red-700 justify-center md:justify-between rounded tracking-wide">
