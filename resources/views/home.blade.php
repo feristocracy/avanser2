@@ -148,36 +148,58 @@
 
                 <div class="mx-auto mt-5 h-1 w-24 bg-yellow-400"></div>
 
+                <p class="mt-4 text-sm md:text-base text-slate-600 font-text max-w-[80%] md:max-w-[60%] mx-auto">
+                    Un portafolio de servicios diseñado para mantener tus unidades en condiciones óptimas y reducir interrupciones operativas.
+                </p>
+
                 <div class="mt-10 md:mt-14 grid gap-8 md:grid-cols-3">
 
                     <div class="rounded bg-white p-8 md:p-10 shadow-lg">
-                        <img src="{{ asset('images/avanser/serviciopreventivoicon.svg') }}"
+                        <img src="{{ asset('images/avanser/motor.png') }}"
                              alt="Servicio preventivo"
-                             class="h-16 md:h-20 w-auto mx-auto">
+                             class="h-16 md:h-35 w-auto mx-auto">
                         <h3 class="mt-6 text-base md:text-lg font-title font-bold uppercase">Servicio preventivo</h3>
                         <p class="mt-4 text-sm md:text-base text-slate-600 font-text max-w-[80%] md:max-w-[60%] mx-auto">
-                            Siempre mantén tus vehículos en óptimas condiciones.
+                            Servicios programados para cuidar el rendimiento y la confiabilidad de las unidades.
                         </p>
+                        <a href="#" data-modal-target="modal-preventivo" class="mt-6 inline-flex items-center gap-2 rounded bg-red-600 px-6 py-2.5 text-sm font-title font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-red-700 hover:shadow-lg">
+                            Ver más
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
 
                     <div class="rounded bg-white p-8 md:p-10 shadow-lg">
-                        <img src="{{ asset('images/avanser/sistemacorrectivoicon.svg') }}"
+                        <img src="{{ asset('images/avanser/cables.png') }}"
                              alt="Sistema correctivo"
-                             class="h-16 md:h-20 w-auto mx-auto">
+                             class="h-16 md:h-35 w-auto mx-auto">
                         <h3 class="mt-6 text-base md:text-lg font-title font-bold uppercase">Sistema correctivo</h3>
                         <p class="mt-4 text-sm md:text-base text-slate-600 font-text max-w-[80%] md:max-w-[60%] mx-auto">
-                            Corregimos las fallas de tu unidad.
+                            Diagnóstico y reparación de componentes mecánicos y electrónicos.
                         </p>
+                        <a href="#" data-modal-target="modal-correctivo" class="mt-6 inline-flex items-center gap-2 rounded bg-red-600 px-6 py-2.5 text-sm font-title font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-red-700 hover:shadow-lg">
+                            Ver más
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
 
                     <div class="rounded bg-white p-8 md:p-10 shadow-lg">
-                        <img src="{{ asset('images/avanser/neumaticosicon.svg') }}"
+                        <img src="{{ asset('images/avanser/llanta.png') }}"
                              alt="Neumáticos"
-                             class="h-16 md:h-20 w-auto mx-auto">
+                             class="h-16 md:h-35 w-auto mx-auto">
                         <h3 class="mt-6 text-base md:text-lg font-title font-bold uppercase">Neumáticos</h3>
                         <p class="mt-4 text-sm md:text-base text-slate-600 font-text max-w-[80%] md:max-w-[60%] mx-auto">
-                            Llantas, alineación, balanceo y montaje.
+                            Atención especializada para el cuidado de las llantas.
                         </p>
+                        <a href="#" data-modal-target="modal-neumaticos" class="mt-6 inline-flex items-center gap-2 rounded bg-red-600 px-6 py-2.5 text-sm font-title font-bold uppercase tracking-wide text-white shadow-md transition hover:bg-red-700 hover:shadow-lg">
+                            Ver más
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
 
                 </div>
@@ -382,6 +404,99 @@
 
     </main>
 
+    {{-- Modal: Servicio Preventivo --}}
+    <div id="modal-preventivo" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div class="js-modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+
+        <div class="relative w-full max-w-lg rounded-lg bg-white p-8 md:p-10 shadow-2xl text-center">
+            <button type="button" class="js-modal-close absolute top-4 right-4 text-slate-400 transition hover:text-slate-700"
+                    aria-label="Cerrar">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <h3 class="text-2xl md:text-3xl font-title font-black uppercase text-slate-900">
+                Servicio Preventivo
+            </h3>
+            <div class="mx-auto mt-4 h-1 w-16 bg-yellow-400"></div>
+
+            <h4 class="mt-5 text-base md:text-lg font-title font-bold uppercase text-red-600">
+                Detalle del Servicio
+            </h4>
+
+            <p class="mt-4 text-sm md:text-base text-slate-600 font-text">
+                Incluye opciones como mantenimiento mayor y menor, revisión de suspensión, frenos, aire acondicionado, luces y sistema eléctrico.
+            </p>
+
+            <a href="#contacto" class="js-modal-contact mt-8 mx-auto inline-block rounded bg-red-600 px-10 py-3 text-sm font-title font-bold uppercase text-white shadow-md transition hover:bg-red-700 hover:shadow-lg">
+                Solicitar Información
+            </a>
+        </div>
+    </div>
+
+    {{-- Modal: Sistema Correctivo --}}
+    <div id="modal-correctivo" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div class="js-modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+
+        <div class="relative w-full max-w-lg rounded-lg bg-white p-8 md:p-10 shadow-2xl text-center">
+            <button type="button" class="js-modal-close absolute top-4 right-4 text-slate-400 transition hover:text-slate-700"
+                    aria-label="Cerrar">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <h3 class="text-2xl md:text-3xl font-title font-black uppercase text-slate-900">
+                Sistema Correctivo
+            </h3>
+            <div class="mx-auto mt-4 h-1 w-16 bg-yellow-400"></div>
+
+            <h4 class="mt-5 text-base md:text-lg font-title font-bold uppercase text-red-600">
+                Detalle del Servicio
+            </h4>
+
+            <p class="mt-4 text-sm md:text-base text-slate-600 font-text">
+                Atención a sistemas de diagnóstico, electrónica, motor, dirección y transmisión, de acuerdo con la necesidad de cada vehículo.
+            </p>
+
+            <a href="#contacto" class="js-modal-contact mt-8 mx-auto inline-block rounded bg-red-600 px-10 py-3 text-sm font-title font-bold uppercase text-white shadow-md transition hover:bg-red-700 hover:shadow-lg">
+                Solicitar Información
+            </a>
+        </div>
+    </div>
+
+    {{-- Modal: Neumáticos --}}
+    <div id="modal-neumaticos" class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div class="js-modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-sm"></div>
+
+        <div class="relative w-full max-w-lg rounded-lg bg-white p-8 md:p-10 shadow-2xl text-center">
+            <button type="button" class="js-modal-close absolute top-4 right-4 text-slate-400 transition hover:text-slate-700"
+                    aria-label="Cerrar">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <h3 class="text-2xl md:text-3xl font-title font-black uppercase text-slate-900">
+                Neumáticos
+            </h3>
+            <div class="mx-auto mt-4 h-1 w-16 bg-yellow-400"></div>
+
+            <h4 class="mt-5 text-sm md:text-lg font-title font-bold uppercase text-red-600">
+                Detalle del Servicio
+            </h4>
+
+            <p class="mt-4 text-sm md:text-base text-slate-600 font-text">
+                Servicio de llantas, alineación, balanceo y montaje.
+            </p>
+
+            <a href="#contacto" class="js-modal-contact mt-8 mx-auto inline-block rounded bg-red-600 px-10 py-3 text-sm font-title font-bold uppercase text-white shadow-md transition hover:bg-red-700 hover:shadow-lg">
+                Solicitar Información
+            </a>
+        </div>
+    </div>
+
     {{-- Script para el menú móvil --}}
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -404,6 +519,52 @@
                     spans[2].style.transform = 'rotate(-45deg) translate(2px, 2px)';
                 }
             }
+
+            // Modales de servicios
+            const modalTriggers = document.querySelectorAll('[data-modal-target]');
+
+            function openModal(modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeModal(modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            modalTriggers.forEach(trigger => {
+                trigger.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modalTarget);
+                    if (modal) openModal(modal);
+                });
+            });
+
+            document.querySelectorAll('.js-modal-close, .js-modal-backdrop').forEach(el => {
+                el.addEventListener('click', () => {
+                    closeModal(el.closest('.fixed'));
+                });
+            });
+
+            document.querySelectorAll('.js-modal-contact').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    closeModal(el.closest('.fixed'));
+                    const contacto = document.getElementById('contacto');
+                    if (contacto) {
+                        contacto.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.fixed.z-50.flex').forEach(closeModal);
+                }
+            });
 
             btn.addEventListener('click', toggleMenu);
 
