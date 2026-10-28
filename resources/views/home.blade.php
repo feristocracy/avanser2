@@ -139,16 +139,16 @@
         </section>
 
         {{-- Servicios --}}
-        <section id="servicios" class="bg-white px-6 py-12 md:py-16">
+        <section id="servicios" class="bg-slate-900 px-6 py-12 md:py-16">
             <div class="mx-auto max-w-7xl text-center">
 
-                <h2 class="text-3xl md:text-4xl font-black uppercase text-slate-900 font-title">
+                <h2 class="text-3xl md:text-4xl font-black uppercase text-slate-100 font-title">
                     Nuestros servicios
                 </h2>
 
                 <div class="mx-auto mt-5 h-1 w-24 bg-yellow-400"></div>
 
-                <p class="mt-4 text-sm md:text-base text-slate-600 font-text max-w-[80%] md:max-w-[60%] mx-auto">
+                <p class="mt-4 text-sm md:text-base text-slate-200 font-text max-w-[80%] md:max-w-[60%] mx-auto">
                     Un portafolio de servicios diseñado para mantener tus unidades en condiciones óptimas y reducir interrupciones operativas.
                 </p>
 
@@ -208,6 +208,71 @@
                    class="mt-12 md:mt-15 inline-flex bg-red-600 px-10 py-4 text-sm md:text-base font-title font-bold uppercase text-white transition hover:bg-red-700 rounded">
                     Más servicios
                 </a>
+
+                {{-- ¿Por qué elegir Avanser? --}}
+                <div class="mt-14 md:mt-20">
+                    <h3 class="text-3xl md:text-4xl font-black uppercase text-slate-100 font-title">
+                        ¿Por qué elegir Avanser?
+                    </h3>
+
+                    <div class="mx-auto mt-5 h-1 w-24 bg-yellow-400"></div>
+
+                    <p class="mt-4 text-base md:text-lg text-redBright font-title font-bold uppercase tracking-wide">
+                        Tu aliado estratégico en el camino
+                    </p>
+
+                    <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+                        <div class="rounded bg-white p-6 md:p-8 shadow-lg border-t-4 border-yellow-400">
+                            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-600/10">
+                                <svg class="h-7 w-7 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                </svg>
+                            </div>
+                            <h4 class="mt-5 text-sm md:text-base font-title font-bold uppercase text-slate-900">Experiencia</h4>
+                            <p class="mt-3 text-sm text-slate-600 font-text">
+                                Conocimiento especializado en el mantenimiento de flotillas.
+                            </p>
+                        </div>
+
+                        <div class="rounded bg-white p-6 md:p-8 shadow-lg border-t-4 border-yellow-400">
+                            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-600/10">
+                                <svg class="h-7 w-7 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                                </svg>
+                            </div>
+                            <h4 class="mt-5 text-sm md:text-base font-title font-bold uppercase text-slate-900">Seguridad</h4>
+                            <p class="mt-3 text-sm text-slate-600 font-text">
+                                Servicios orientados al buen estado de cada vehículo.
+                            </p>
+                        </div>
+
+                        <div class="rounded bg-white p-6 md:p-8 shadow-lg border-t-4 border-yellow-400">
+                            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-600/10">
+                                <svg class="h-7 w-7 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12c0-1.232.046-2.453.138-3.662a4.006 4.006 0 013.7-3.7 48.678 48.678 0 017.324 0 4.006 4.006 0 013.7 3.7c.017.22.032.441.046.662M4.5 12l-3-3m3 3l3-3m12 3c0 1.232-.046 2.453-.138 3.662a4.006 4.006 0 01-3.7 3.7 48.657 48.657 0 01-7.324 0 4.006 4.006 0 01-3.7-3.7c-.017-.22-.032-.441-.046-.662M19.5 12l-3 3m3-3l3 3"/>
+                                </svg>
+                            </div>
+                            <h4 class="mt-5 text-sm md:text-base font-title font-bold uppercase text-slate-900">Continuidad</h4>
+                            <p class="mt-3 text-sm text-slate-600 font-text">
+                                Atención para prevenir fallas e interrupciones.
+                            </p>
+                        </div>
+
+                        <div class="rounded bg-white p-6 md:p-8 shadow-lg border-t-4 border-yellow-400">
+                            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-600/10">
+                                <svg class="h-7 w-7 text-red-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+                                </svg>
+                            </div>
+                            <h4 class="mt-5 text-sm md:text-base font-title font-bold uppercase text-slate-900">Atención cercana</h4>
+                            <p class="mt-3 text-sm text-slate-600 font-text">
+                                Soluciones adaptadas a las necesidades de cada empresa.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -291,14 +356,22 @@
             </a>
         </section>
 
+        {{-- Cobertura nacional --}}
+        <section class="px-6 py-12 md:py-16">
+            
+        </section>
+
         {{-- Presencia --}}
         <section id="presencia" class="px-6 py-12 md:py-16">
+
             <div class="mx-auto grid max-w-7xl gap-8 rounded-lg bg-white p-6 md:p-8 lg:grid-cols-2">
 
                 <div class="lg:pl-12 text-center lg:text-left">
                     <h2 class="text-3xl md:text-4xl font-title font-black uppercase text-slate-900 lg:pt-10">
                         Presencia
                     </h2>
+
+                    <div class="hidden lg:block w-47 h-1 bg-yellow-400 mt-4"></div>
 
                     <div class="mt-8 space-y-6 md:space-y-8 text-slate-700 text-left">
                         <div class="flex items-center gap-4">
@@ -335,6 +408,33 @@
 
                 <div class="w-full h-[300px] md:h-[450px]">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6021152011735!2d-98.19066458965496!3d19.037246682084938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0f1e6ca4197%3A0xac71e899d65b2ae2!2sAvanser%20-%20Centro%20de%20Servicio%20Automotriz!5e0!3m2!1ses-419!2smx!4v1783983467869!5m2!1ses-419!2smx" class="w-full h-full border-0 rounded" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+            </div>
+
+            <div class="mx-auto grid max-w-7xl gap-8 items-center rounded-lg bg-white p-6 md:p-10 shadow-lg lg:grid-cols-[1fr_auto_1fr]">
+
+                <div class="text-center lg:text-right mr-4">
+                    <h2 class="text-3xl md:text-4xl font-title font-black uppercase text-slate-900">
+                        A nivel nacional
+                    </h2>
+
+                    <p class="mt-6 text-sm md:text-base text-slate-600 font-text">
+                        Estamos presentes en más de 20 estados de la República Mexicana, brindando soluciones de mantenimiento para empresas con flotillas en diferentes regiones del país.
+                    </p>
+
+                    <a href="#contacto"
+                       class="mt-8 inline-flex bg-red-600 px-10 py-4 text-sm md:text-base font-title font-bold uppercase text-white transition hover:bg-red-700 rounded shadow-md hover:shadow-lg">
+                        Consultar cobertura
+                    </a>
+                </div>
+
+                <div class="hidden lg:block w-1 h-35 bg-yellow-400"></div>
+
+                <div class="flex justify-center">
+                    <img src="{{ asset('images/avanser/mapamexico.png') }}"
+                         alt="Cobertura a nivel nacional"
+                         class="w-full max-w-md h-auto">
                 </div>
 
             </div>
