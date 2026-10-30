@@ -11,7 +11,8 @@
     <div class="w-full xl:max-w-[70%] lg:max-w-[85%] md:max-w-[95%] mx-auto">
 
         {{-- Header --}}
-        <header class="fixed top-0 left-0 z-50 w-full bg-white/95 shadow-sm backdrop-blur mb-6">
+        <header class="fixed top-0 left-0 z-50 w-full bg-slate-900 shadow-sm backdrop-blur mb-6">
+
             <div class="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-20 py-4 md:py-0 relative">
 
                 <!-- Hamburger Button Mobile -->
@@ -21,14 +22,22 @@
                     <span class="block w-6 h-0.5 bg-slate-900 transition-transform duration-300 origin-bottom-left"></span>
                 </button>
 
-                <!-- Botón Reservar Desktop -->
-                <a href="#contacto"
-                   class="hidden rounded bg-avanserRed px-5 py-3 text-xs font-title font-bold uppercase text-white shadow hover:bg-red-700 md:inline-flex">
-                    Reservar ahora
+                <!-- Logo Desktop -->
+                <a href="#" class="hidden md:inline-flex items-center py-2">
+                    <img src="{{ asset('images/avanser/logowhite.png') }}"
+                         alt="Avanser Centro de Servicio Automotriz"
+                         class="h-22 w-auto">
+                </a>
+
+                <!-- Logo Mobile -->
+                <a href="#" class="inline-flex items-center md:hidden">
+                    <img src="{{ asset('images/avanser/logowhite.png') }}"
+                         alt="Avanser Centro de Servicio Automotriz"
+                         class="h-14 w-auto">
                 </a>
 
                 <!-- Nav Desktop -->
-                <nav class="hidden items-center gap-8 text-sm font-title font-bold uppercase tracking-wide text-slate-700 md:flex">
+                <nav class="hidden items-center gap-8 text-sm font-title font-bold uppercase tracking-wide text-slate-200 md:flex">
                     <a href="#quienes-somos" class="hover:text-avanserRed hover:underline hover:underline-offset-6 hover:decoration-4 hover:decoration-avanserYellow">Quiénes somos</a>
                     <a href="#servicios" class="hover:text-avanserRed hover:underline hover:underline-offset-6 hover:decoration-4 hover:decoration-avanserYellow">Servicios</a>
                     <a href="#clientes" class="hover:text-avanserRed hover:underline hover:underline-offset-6 hover:decoration-4 hover:decoration-avanserYellow">Clientes</a>
@@ -36,18 +45,10 @@
                     <a href="#contacto" class="hover:text-avanserRed hover:underline hover:underline-offset-6 hover:decoration-4 hover:decoration-avanserYellow">Contacto</a>
                 </nav>
 
-                <!-- Logo Desktop -->
-                <a href="#" class="hidden md:inline-flex items-center py-2">
-                    <img src="{{ asset('images/avanser/logo.png') }}"
-                         alt="Avanser Centro de Servicio Automotriz"
-                         class="h-22 w-auto">
-                </a>
-
-                <!-- Logo Mobile -->
-                <a href="#" class="inline-flex items-center md:hidden">
-                    <img src="{{ asset('images/avanser/logo.png') }}"
-                         alt="Avanser Centro de Servicio Automotriz"
-                         class="h-14 w-auto">
+                <!-- Botón Reservar Desktop -->
+                <a href="#contacto"
+                   class="hidden rounded bg-avanserRed px-5 py-3 text-xs font-title font-bold uppercase text-white shadow hover:bg-red-700 md:inline-flex">
+                    Reservar ahora
                 </a>
 
             </div>
@@ -102,7 +103,72 @@
         </section>
 
         {{-- Quiénes somos --}}
-        <section id="quienes-somos" class="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:py-16 lg:grid-cols-2">
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 py-8 px-4 bg-white mt-4">
+  
+        <!-- Item 1: +10 años -->
+        <div class="flex items-center gap-3">
+            <!-- Ícono Estrella/Destello -->
+            <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+            </svg>
+            <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-gray-900 leading-none">+10 años</span>
+            <span class="text-sm font-medium text-gray-400 mt-1">de experiencia*</span>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="hidden md:block w-px h-12 bg-gray-200"></div>
+
+        <!-- Item 2: +20 estados -->
+        <div class="flex items-center gap-3">
+            <!-- Ícono Mira/Objetivo -->
+            <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>
+            </svg>
+            <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-gray-900 leading-none">+20 estados</span>
+            <span class="text-sm font-medium text-gray-400 mt-1">con presencia*</span>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="hidden md:block w-px h-12 bg-gray-200"></div>
+
+        <!-- Item 3: Red de apoyo -->
+        <div class="flex items-center gap-3">
+            <!-- Ícono Handshake -->
+            <svg class="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8V128h-.7l-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48V352h28.2l91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 10.7-20.6l17.9 15.8c19.6 17.9 49.9 16.6 67.8-3.1c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123z"/>
+            </svg>
+            <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-gray-900 leading-none">Red de apoyo</span>
+            <span class="text-sm font-medium text-gray-400 mt-1">proveedores especializados</span>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="hidden md:block w-px h-12 bg-gray-200"></div>
+
+        <!-- Item 4: Atención -->
+        <div class="flex items-center gap-3">
+            <!-- Ícono Engrane -->
+            <svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <div class="flex flex-col">
+            <span class="text-2xl font-extrabold text-gray-900 leading-none">Atención</span>
+            <span class="text-sm font-medium text-gray-400 mt-1">enfocada en flotillas</span>
+            </div>
+        </div>
+
+        </div>
+        <section id="quienes-somos" class="mx-auto grid max-w-7xl gap-8 px-6 py-12 md:py-12 lg:grid-cols-2">
+
+        
 
             <div class="overflow-hidden order-2 lg:order-1">
                 <img src="{{ asset('images/avanser/quienessomos.png') }}"
@@ -110,21 +176,28 @@
                      class="w-full rounded-sm object-cover transition-transform duration-500 ease-in-out hover:scale-105">
             </div>
 
-            <div class="flex items-center border-l-4 lg:border-l-0 lg:border-r-4 border-yellow-400 bg-white p-6 md:p-10 rounded-sm order-1 lg:order-2">
-                <div class="mx-auto max-w-lg text-center">
+            <div class="flex items-center border-l-4 lg:border-l-0 lg:border-r-4 border-yellow-400 bg-white p-6 md:p-2 rounded-sm order-1 lg:order-2">
+                <div class="mx-auto max-w-lg text-left">
 
-                    <div class="flex items-center justify-center gap-4">
-                        <img src="{{ asset('images/avanser/quienessomosicon.svg') }}"
-                             alt="Mecánico dando servicio a vehículo"
-                             class="h-10 md:h-12 w-auto">
-
-                        <h2 class="text-3xl md:text-4xl font-title font-bold uppercase text-slate-900">
-                            Quiénes somos
+                    <div class="flex items-start gap-4">
+                        <div class="flex flex-col items-start pb-2 bg-white font-sans">
+                        <!-- Subtítulo superior -->
+                        <span class="text-red-600 text-sm md:text-base font-bold tracking-widest uppercase mb-4">
+                            Quienes Somos
+                        </span>
+                        
+                        <!-- Título principal -->
+                        <h2 class="flex flex-col text-5xl md:text-6xl lg:text-5xl font-black uppercase leading-none tracking-tight">
+                            <span class="text-gray-900">Más que</span>
+                            <span class="text-gray-900">mantenimiento,</span>
+                            <span class="text-red-600 mt-1 md:mt-2">tu aliado</span>
+                            <span class="text-red-600">estratégico.</span>
                         </h2>
+                        </div>
                     </div>
 
-                    <p class="mt-6 md:mt-8 text-base md:text-lg leading-relaxed text-slate-700 font-text">
-                        Somos un equipo de asesores especializados en mantenimiento para flotillas a Diésel y Gasolina.
+                    <p class="mt-6 md:mt-2 text-base md:text-lg leading-relaxed text-slate-700 font-text">
+                        Somos un equipo de asesores especializados en mantenimiento de flotillas a diésel y gasolina, <b>teniendo presencia en varios estados del país.</b> Nos enfocamos en la seguridad, continuidad operativa y cuidado de cada vehículo.
                         Tenemos presencia en varios estados del país.
                     </p>
 
@@ -356,24 +429,19 @@
             </a>
         </section>
 
-        {{-- Cobertura nacional --}}
-        <section class="px-6 py-12 md:py-16">
-            
-        </section>
-
         {{-- Presencia --}}
         <section id="presencia" class="px-6 py-12 md:py-16">
 
-            <div class="mx-auto grid max-w-7xl gap-8 rounded-lg bg-white p-6 md:p-8 lg:grid-cols-2">
+            <div class="mx-auto grid max-w-7xl gap-8 rounded-lg bg-slate-900 p-6 md:p-8 lg:grid-cols-2">
 
                 <div class="lg:pl-12 text-center lg:text-left">
-                    <h2 class="text-3xl md:text-4xl font-title font-black uppercase text-slate-900 lg:pt-10">
+                    <h2 class="text-3xl md:text-4xl font-title font-black uppercase text-slate-200 lg:pt-10">
                         Presencia
                     </h2>
 
                     <div class="hidden lg:block w-47 h-1 bg-yellow-400 mt-4"></div>
 
-                    <div class="mt-8 space-y-6 md:space-y-8 text-slate-700 text-left">
+                    <div class="mt-8 space-y-6 md:space-y-8 text-slate-300 text-left">
                         <div class="flex items-center gap-4">
                             <img src="{{ asset('images/avanser/ubicacionicon.svg') }}"
                                  alt="Ubicación Avanser Puebla"
@@ -412,9 +480,14 @@
 
             </div>
 
-            <div class="mx-auto grid max-w-7xl gap-8 items-center rounded-lg bg-white p-6 md:p-10 shadow-lg lg:grid-cols-[1fr_auto_1fr]">
+            <div class="relative mt-20 mx-auto grid max-w-7xl gap-8 items-center rounded-lg p-6 md:p-10 shadow-lg lg:grid-cols-[1fr_auto_1fr] bg-cover bg-center">
 
-                <div class="text-center lg:text-right mr-4">
+                <!-- 1. Capa de la imagen de fondo con transparencia (Ajusta opacity-30 a tu gusto) -->
+                <div class="absolute inset-0 z-0 bg-cover bg-center opacity-20"
+                    style="background-image: url('{{ asset('images/avanser/flotilla.jpeg') }}');">
+                </div>
+
+                <div class="relative z-10 text-center lg:text-right mr-4">
                     <h2 class="text-3xl md:text-4xl font-title font-black uppercase text-slate-900">
                         A nivel nacional
                     </h2>
@@ -429,9 +502,9 @@
                     </a>
                 </div>
 
-                <div class="hidden lg:block w-1 h-35 bg-yellow-400"></div>
+                <div class="relative z-10 hidden lg:block w-1 h-35 bg-yellow-400"></div>
 
-                <div class="flex justify-center">
+                <div class="relative z-10 flex justify-center">
                     <img src="{{ asset('images/avanser/mapamexico.png') }}"
                          alt="Cobertura a nivel nacional"
                          class="w-full max-w-md h-auto">
